@@ -1,0 +1,132 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-heading: 'Outfit', sans-serif;
+    --font-sans: 'Plus Jakarta Sans', sans-serif;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-color: #F8FAFC;
+    color: #1E293B;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-heading);
+    letter-spacing: -0.02em;
+    color: #0F172A;
+  }
+}
+
+/* Custom Light & Colorful Theme Scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #CBD5E1;
+  border-radius: 9999px;
+  border: 2px solid #F1F5F9;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #FF6B35;
+}
+
+/* Glassmorphism & Colorful Card Elevation */
+.glass-panel {
+  background: rgba(255, 255, 255, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+  box-shadow: 0 10px 25px -5px rgba(15, 23, 42, 0.05);
+}
+
+.glass-panel-elevated {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 107, 53, 0.2);
+  box-shadow: 0 20px 40px -15px rgba(255, 107, 53, 0.12), 0 10px 25px -10px rgba(0, 0, 0, 0.06);
+}
+
+.glass-card {
+  background: #FFFFFF;
+  border: 1px solid #E2E8F0;
+  box-shadow: 0 4px 14px 0 rgba(0, 0, 0, 0.04);
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-card:hover {
+  background: #FFFFFF;
+  border-color: rgba(255, 107, 53, 0.45);
+  transform: translateY(-4px);
+  box-shadow: 0 16px 32px -8px rgba(255, 107, 53, 0.15), 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+/* Colorful Gradient Text & Accents */
+.text-sunset-gradient {
+  background: linear-gradient(135deg, #FF4500 0%, #FF6B35 45%, #F59E0B 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-adventure-gradient {
+  background: linear-gradient(135deg, #059669 0%, #0D9488 50%, #0284C7 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-purple-gradient {
+  background: linear-gradient(135deg, #7C3AED 0%, #9333EA 50%, #C026D3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Hero overlay for light and bright vibrant aesthetics */
+.hero-overlay-light {
+  background: linear-gradient(180deg, rgba(15, 23, 42, 0.35) 0%, rgba(248, 250, 252, 0.8) 75%, #F8FAFC 100%);
+}
+
+.card-image-overlay-light {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05) 0%, rgba(0, 0, 0, 0.25) 50%, rgba(15, 23, 42, 0.85) 100%);
+}
+
+/* Colorful Glow Accents */
+.glow-orange {
+  box-shadow: 0 0 35px -5px rgba(255, 107, 53, 0.25);
+}
+
+.glow-teal {
+  box-shadow: 0 0 35px -5px rgba(16, 185, 129, 0.22);
+}
+
+.glow-purple {
+  box-shadow: 0 0 35px -5px rgba(139, 92, 246, 0.22);
+}
+
+/* Leaflet Light & Colorful Theme Overrides */
+.leaflet-container {
+  background: #F8FAFC !important;
+  font-family: inherit;
+  border-radius: 1rem;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #FFFFFF !important;
+  color: #0F172A !important;
+  border: 1px solid #E2E8F0;
+  border-radius: 1rem !important;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05) !important;
+}
+
+.leaflet-popup-tip {
+  background: #FFFFFF !important;
+}
